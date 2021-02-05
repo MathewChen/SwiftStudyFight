@@ -18,6 +18,8 @@
 		28C8698E25CBF74E0080AD5E /* TitleListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8698D25CBF74E0080AD5E /* TitleListCell.swift */; };
 		28C869A325CBFB840080AD5E /* MXSwiftBasicLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C869A225CBFB840080AD5E /* MXSwiftBasicLanguage.swift */; };
 		28C869A925CCEF220080AD5E /* MXSwiftDataTypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C869A825CCEF220080AD5E /* MXSwiftDataTypeVC.swift */; };
+		28C869B225CD240C0080AD5E /* MXSwiftVariableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C869B125CD240C0080AD5E /* MXSwiftVariableVC.swift */; };
+		28C869BB25CD24580080AD5E /* MXBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C869BA25CD24580080AD5E /* MXBaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		28C8698D25CBF74E0080AD5E /* TitleListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleListCell.swift; sourceTree = "<group>"; };
 		28C869A225CBFB840080AD5E /* MXSwiftBasicLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftBasicLanguage.swift; sourceTree = "<group>"; };
 		28C869A825CCEF220080AD5E /* MXSwiftDataTypeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftDataTypeVC.swift; sourceTree = "<group>"; };
+		28C869B125CD240C0080AD5E /* MXSwiftVariableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftVariableVC.swift; sourceTree = "<group>"; };
+		28C869BA25CD24580080AD5E /* MXBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXBaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,8 +151,10 @@
 			isa = PBXGroup;
 			children = (
 				28C8698125CBF49F0080AD5E /* TitleListVC.swift */,
+				28C869B925CD243F0080AD5E /* Base */,
 				28C8699625CBFA7A0080AD5E /* Swift基本语法 */,
 				28C869A725CCEED90080AD5E /* Swift数据类型 */,
+				28C869B025CD23B60080AD5E /* Swift 变量 */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -175,6 +181,22 @@
 				28C869A825CCEF220080AD5E /* MXSwiftDataTypeVC.swift */,
 			);
 			path = "Swift数据类型";
+			sourceTree = "<group>";
+		};
+		28C869B025CD23B60080AD5E /* Swift 变量 */ = {
+			isa = PBXGroup;
+			children = (
+				28C869B125CD240C0080AD5E /* MXSwiftVariableVC.swift */,
+			);
+			path = "Swift 变量";
+			sourceTree = "<group>";
+		};
+		28C869B925CD243F0080AD5E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				28C869BA25CD24580080AD5E /* MXBaseViewController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,9 +329,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28C869B225CD240C0080AD5E /* MXSwiftVariableVC.swift in Sources */,
 				28C869A325CBFB840080AD5E /* MXSwiftBasicLanguage.swift in Sources */,
 				28C8698E25CBF74E0080AD5E /* TitleListCell.swift in Sources */,
 				28C8690B25CBEA730080AD5E /* AppDelegate.swift in Sources */,
+				28C869BB25CD24580080AD5E /* MXBaseViewController.swift in Sources */,
 				28C8690D25CBEA730080AD5E /* SceneDelegate.swift in Sources */,
 				28C8698225CBF49F0080AD5E /* TitleListVC.swift in Sources */,
 				28C869A925CCEF220080AD5E /* MXSwiftDataTypeVC.swift in Sources */,

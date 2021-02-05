@@ -7,9 +7,9 @@
 
 import UIKit
 
-class TitleListVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class TitleListVC: MXBaseViewController,UITableViewDelegate,UITableViewDataSource {
 
-    var titleArr : NSArray = ["Swift 基本语法","Swift 数据类型"]
+    var titleArr : NSArray = ["Swift 基本语法","Swift 数据类型","Swift 变量"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,13 +56,17 @@ class TitleListVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         if titleStr == "Swift 基本语法" {
             let basicVC : MXSwiftBasicLanguage = MXSwiftBasicLanguage.init()
             basicVC.title = titleStr
-            
             self.navigationController?.pushViewController(basicVC, animated: true)
             
         }else if titleStr == "Swift 数据类型" {
             let dataTypeVC = MXSwiftDataTypeVC.init()
-            
+            dataTypeVC.title = titleStr
             self.navigationController?.pushViewController(dataTypeVC, animated: true)
+            
+        }else if titleStr == "Swift 变量" {
+            let basic : MXSwiftVariableVC = MXSwiftVariableVC.init()
+            basic.title = titleStr
+            self.navigationController?.pushViewController(basic, animated: true)
             
         }
     }

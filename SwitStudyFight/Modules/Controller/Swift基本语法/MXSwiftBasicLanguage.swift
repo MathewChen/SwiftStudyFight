@@ -7,12 +7,10 @@
 
 import UIKit
 
-class MXSwiftBasicLanguage: UIViewController {
+class MXSwiftBasicLanguage: MXBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.view.backgroundColor = UIColor.white
         
         //FIXME: 第一句
         var myString = "Hello,World!"

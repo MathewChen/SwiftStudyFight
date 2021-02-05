@@ -7,12 +7,10 @@
 
 import UIKit
 
-class MXSwiftDataTypeVC: UIViewController {
+class MXSwiftDataTypeVC: MXBaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.view.backgroundColor = UIColor.white
         
         self.builtInDataTypes()
         

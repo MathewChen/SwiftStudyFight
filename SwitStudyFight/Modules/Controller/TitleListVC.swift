@@ -9,7 +9,7 @@ import UIKit
 
 class TitleListVC: MXBaseViewController,UITableViewDelegate,UITableViewDataSource {
 
-    var titleArr : NSArray = ["Swift 基本语法","Swift 数据类型","Swift 变量"]
+    var titleArr : NSArray = ["Swift 基本语法","Swift 数据类型","Swift 变量","Swift 可选类型"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,8 +26,10 @@ class TitleListVC: MXBaseViewController,UITableViewDelegate,UITableViewDataSourc
         tableView.backgroundColor = UIColor.white
         tableView.register(TitleListCell.classForCoder(), forCellReuseIdentifier: "testCellId")
         
+        self.capital()
     }
     
+    //MARK: UITableViewDelegate
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.titleArr.count
     }
@@ -49,26 +51,69 @@ class TitleListVC: MXBaseViewController,UITableViewDelegate,UITableViewDataSourc
         return 60
     }
     
+    //MARK: 点击Cell
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let titleStr : String = self.titleArr[indexPath.row] as! String
         
         if titleStr == "Swift 基本语法" {
+            //FIXME: Swift 基本语法
             let basicVC : MXSwiftBasicLanguage = MXSwiftBasicLanguage.init()
             basicVC.title = titleStr
             self.navigationController?.pushViewController(basicVC, animated: true)
             
         }else if titleStr == "Swift 数据类型" {
+            //FIXME: Swift 数据类型
             let dataTypeVC = MXSwiftDataTypeVC.init()
             dataTypeVC.title = titleStr
             self.navigationController?.pushViewController(dataTypeVC, animated: true)
             
         }else if titleStr == "Swift 变量" {
+            //FIXME: Swift 变量
             let basic : MXSwiftVariableVC = MXSwiftVariableVC.init()
             basic.title = titleStr
             self.navigationController?.pushViewController(basic, animated: true)
             
+        }else if titleStr == "Swift 可选类型" {
+            //FIXME: Swift  可选类型
+            let optionalVC : MXSwiftOptionalsVC = MXSwiftOptionalsVC.init()
+            optionalVC.title = titleStr
+            self.navigationController?.pushViewController(optionalVC, animated: true)
+            
         }
+    }
+    
+    //MARK: 写着玩玩，不比在意
+    func capital() {
+        let startNum : Float = 10000.0000
+        var num : Float = startNum
+        let mouthNum : Float = 100000 / 12
+        for index in 0...120 {
+            num = self.getTheReal(startCapital: num, mouthCapital: mouthNum, mouthRate: 0.019)
+            
+            let totalCapital = startNum + mouthNum * Float(index)
+            
+            let capital = (num - totalCapital) / num
+            
+            print("\(index)-----\(totalCapital)-----\(num)-----\(capital)")
+            
+            
+        }
+        
+        
+        
+    }
+    
+    /// 计算一个月
+    /// - Parameters:
+    ///   - startCapital: 开始的资金
+    ///   - mouthCapital: 一个月投入的资金
+    ///   - mouthRate: 预计能够增长
+    /// - Returns: 返回
+    func getTheReal(startCapital : Float, mouthCapital : Float, mouthRate : Float) -> Float {
+        let totalNum = (startCapital + mouthCapital) * mouthRate + (startCapital + mouthCapital)
+        
+        return totalNum
     }
 
 }

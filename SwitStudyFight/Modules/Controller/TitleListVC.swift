@@ -9,7 +9,7 @@ import UIKit
 
 class TitleListVC: MXBaseViewController,UITableViewDelegate,UITableViewDataSource {
 
-    var titleArr : NSArray = ["Swift 基本语法","Swift 数据类型","Swift 变量","Swift 可选类型"]
+    var titleArr : NSArray = ["Swift 基本语法","Swift 数据类型","Swift 变量","Swift 可选类型","Swift 常量"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -75,10 +75,16 @@ class TitleListVC: MXBaseViewController,UITableViewDelegate,UITableViewDataSourc
             self.navigationController?.pushViewController(basic, animated: true)
             
         }else if titleStr == "Swift 可选类型" {
-            //FIXME: Swift  可选类型
+            //FIXME: Swift 可选类型
             let optionalVC : MXSwiftOptionalsVC = MXSwiftOptionalsVC.init()
             optionalVC.title = titleStr
             self.navigationController?.pushViewController(optionalVC, animated: true)
+            
+        }else if titleStr == "Swift 常量" {
+            //FIXME: Swift 常量
+            let letVC:MXSwiftLetVC = MXSwiftLetVC.init()
+            letVC.title = titleStr
+            self.navigationController?.pushViewController(letVC, animated: true)
             
         }
     }

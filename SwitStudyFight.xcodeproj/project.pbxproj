@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2890221F25CE416B008D0E55 /* MXSwiftLetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2890221E25CE416B008D0E55 /* MXSwiftLetVC.swift */; };
+		2890222825CE475F008D0E55 /* MXSwiftLiteralVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2890222725CE475F008D0E55 /* MXSwiftLiteralVC.swift */; };
+		2890224F25D0D842008D0E55 /* MXWordsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2890224E25D0D842008D0E55 /* MXWordsVC.swift */; };
 		28C8690B25CBEA730080AD5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8690A25CBEA730080AD5E /* AppDelegate.swift */; };
 		28C8690D25CBEA730080AD5E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8690C25CBEA730080AD5E /* SceneDelegate.swift */; };
 		28C8691225CBEA730080AD5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C8691025CBEA730080AD5E /* Main.storyboard */; };
@@ -43,6 +45,8 @@
 
 /* Begin PBXFileReference section */
 		2890221E25CE416B008D0E55 /* MXSwiftLetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftLetVC.swift; sourceTree = "<group>"; };
+		2890222725CE475F008D0E55 /* MXSwiftLiteralVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftLiteralVC.swift; sourceTree = "<group>"; };
+		2890224E25D0D842008D0E55 /* MXWordsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXWordsVC.swift; sourceTree = "<group>"; };
 		28C8690725CBEA730080AD5E /* SwitStudyFight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwitStudyFight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28C8690A25CBEA730080AD5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28C8690C25CBEA730080AD5E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +100,22 @@
 				2890221E25CE416B008D0E55 /* MXSwiftLetVC.swift */,
 			);
 			path = "Swift 常量";
+			sourceTree = "<group>";
+		};
+		2890222625CE4569008D0E55 /* Swift 字面量 */ = {
+			isa = PBXGroup;
+			children = (
+				2890222725CE475F008D0E55 /* MXSwiftLiteralVC.swift */,
+			);
+			path = "Swift 字面量";
+			sourceTree = "<group>";
+		};
+		2890224D25D0D81A008D0E55 /* 来吧背单词 */ = {
+			isa = PBXGroup;
+			children = (
+				2890224E25D0D842008D0E55 /* MXWordsVC.swift */,
+			);
+			path = "来吧背单词";
 			sourceTree = "<group>";
 		};
 		28C868FE25CBEA730080AD5E = {
@@ -162,6 +182,7 @@
 		28C8698025CBF4250080AD5E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2890224D25D0D81A008D0E55 /* 来吧背单词 */,
 				28C8698125CBF49F0080AD5E /* TitleListVC.swift */,
 				28C869B925CD243F0080AD5E /* Base */,
 				28C8699625CBFA7A0080AD5E /* Swift基本语法 */,
@@ -169,6 +190,7 @@
 				28C869B025CD23B60080AD5E /* Swift 变量 */,
 				28C869C525CD28DF0080AD5E /* Swift 可选类型 */,
 				2890221D25CE3E4C008D0E55 /* Swift 常量 */,
+				2890222625CE4569008D0E55 /* Swift 字面量 */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -355,12 +377,14 @@
 				28C869A325CBFB840080AD5E /* MXSwiftBasicLanguage.swift in Sources */,
 				28C8698E25CBF74E0080AD5E /* TitleListCell.swift in Sources */,
 				28C8690B25CBEA730080AD5E /* AppDelegate.swift in Sources */,
+				2890222825CE475F008D0E55 /* MXSwiftLiteralVC.swift in Sources */,
 				28C869C725CD29610080AD5E /* MXSwiftOptionalsVC.swift in Sources */,
 				2890221F25CE416B008D0E55 /* MXSwiftLetVC.swift in Sources */,
 				28C869BB25CD24580080AD5E /* MXBaseViewController.swift in Sources */,
 				28C8690D25CBEA730080AD5E /* SceneDelegate.swift in Sources */,
 				28C8698225CBF49F0080AD5E /* TitleListVC.swift in Sources */,
 				28C869A925CCEF220080AD5E /* MXSwiftDataTypeVC.swift in Sources */,
+				2890224F25D0D842008D0E55 /* MXWordsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

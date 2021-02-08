@@ -9,7 +9,7 @@ import UIKit
 
 class TitleListVC: MXBaseViewController,UITableViewDelegate,UITableViewDataSource {
 
-    var titleArr : NSArray = ["Swift 基本语法","Swift 数据类型","Swift 变量","Swift 可选类型","Swift 常量","Swift 字面量","Swift 运算符","一起来背单词吧"]
+    var titleArr : NSArray = ["Swift 基本语法","Swift 数据类型","Swift 变量","Swift 可选类型","Swift 常量","Swift 字面量","Swift 运算符","Swift 条件语句","一起来背单词吧"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -97,6 +97,12 @@ class TitleListVC: MXBaseViewController,UITableViewDelegate,UITableViewDataSourc
             let operatorVC : MXSwiftOperatorVC = MXSwiftOperatorVC.init()
             operatorVC.title = titleStr
             self.navigationController?.pushViewController(operatorVC, animated: true)
+            
+        }else if titleStr == "Swift 条件语句" {
+            //FIXME: Swift 条件语句
+            let ifVC : MXSwiftIfVC = MXSwiftIfVC.init()
+            ifVC.title = titleStr
+            self.navigationController?.pushViewController(ifVC, animated: true)
             
         }else if titleStr == "一起来背单词吧" {
             //FIXME: Swift 一起来背单词吧

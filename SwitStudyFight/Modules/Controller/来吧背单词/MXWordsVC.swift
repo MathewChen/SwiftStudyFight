@@ -328,6 +328,27 @@ class MXWordsVC: MXBaseViewController {
         let characters = "characters"
         print(characters)
         
+        //FIXME: 运算符涉及到的单词
+        //78:operator
+        let compare = "compare"
+        print(compare)
+        
+        //79:logic
+        let logic = "logic"
+        print(logic)
+        
+        //80:bitwise
+        let bitwise = "bitwise"
+        print(bitwise)
+        
+        //81:assignment
+        let assignment = "assignment"
+        print(assignment)
+        
+        //82:interval
+        let interval = "interval"
+        print(interval)
+        
     }
     
     

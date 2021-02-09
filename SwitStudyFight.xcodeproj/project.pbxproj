@@ -12,6 +12,7 @@
 		2890224F25D0D842008D0E55 /* MXWordsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2890224E25D0D842008D0E55 /* MXWordsVC.swift */; };
 		2890225B25D10C17008D0E55 /* MXSwiftOperatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2890225A25D10C17008D0E55 /* MXSwiftOperatorVC.swift */; };
 		2890226125D129F3008D0E55 /* MXSwiftIfVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2890226025D129F3008D0E55 /* MXSwiftIfVC.swift */; };
+		2890226D25D1399A008D0E55 /* MXSwiftForVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2890226C25D1399A008D0E55 /* MXSwiftForVC.swift */; };
 		28C8690B25CBEA730080AD5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8690A25CBEA730080AD5E /* AppDelegate.swift */; };
 		28C8690D25CBEA730080AD5E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8690C25CBEA730080AD5E /* SceneDelegate.swift */; };
 		28C8691225CBEA730080AD5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C8691025CBEA730080AD5E /* Main.storyboard */; };
@@ -51,6 +52,7 @@
 		2890224E25D0D842008D0E55 /* MXWordsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXWordsVC.swift; sourceTree = "<group>"; };
 		2890225A25D10C17008D0E55 /* MXSwiftOperatorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftOperatorVC.swift; sourceTree = "<group>"; };
 		2890226025D129F3008D0E55 /* MXSwiftIfVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftIfVC.swift; sourceTree = "<group>"; };
+		2890226C25D1399A008D0E55 /* MXSwiftForVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftForVC.swift; sourceTree = "<group>"; };
 		28C8690725CBEA730080AD5E /* SwitStudyFight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwitStudyFight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28C8690A25CBEA730080AD5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28C8690C25CBEA730080AD5E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +140,14 @@
 			path = "Swift 条件语句";
 			sourceTree = "<group>";
 		};
+		2890226B25D13975008D0E55 /* Swift 循环 */ = {
+			isa = PBXGroup;
+			children = (
+				2890226C25D1399A008D0E55 /* MXSwiftForVC.swift */,
+			);
+			path = "Swift 循环";
+			sourceTree = "<group>";
+		};
 		28C868FE25CBEA730080AD5E = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +223,7 @@
 				2890222625CE4569008D0E55 /* Swift 字面量 */,
 				2890225625D10B4B008D0E55 /* Swift 运算符 */,
 				2890225F25D12850008D0E55 /* Swift 条件语句 */,
+				2890226B25D13975008D0E55 /* Swift 循环 */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -404,6 +415,7 @@
 				2890226125D129F3008D0E55 /* MXSwiftIfVC.swift in Sources */,
 				2890221F25CE416B008D0E55 /* MXSwiftLetVC.swift in Sources */,
 				28C869BB25CD24580080AD5E /* MXBaseViewController.swift in Sources */,
+				2890226D25D1399A008D0E55 /* MXSwiftForVC.swift in Sources */,
 				2890225B25D10C17008D0E55 /* MXSwiftOperatorVC.swift in Sources */,
 				28C8690D25CBEA730080AD5E /* SceneDelegate.swift in Sources */,
 				28C8698225CBF49F0080AD5E /* TitleListVC.swift in Sources */,

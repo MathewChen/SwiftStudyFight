@@ -9,7 +9,7 @@ import UIKit
 
 class TitleListVC: MXBaseViewController,UITableViewDelegate,UITableViewDataSource {
 
-    var titleArr : NSArray = ["Swift 基本语法","Swift 数据类型","Swift 变量","Swift 可选类型","Swift 常量","Swift 字面量","Swift 运算符","Swift 条件语句","一起来背单词吧"]
+    var titleArr : NSArray = ["Swift 基本语法","Swift 数据类型","Swift 变量","Swift 可选类型","Swift 常量","Swift 字面量","Swift 运算符","Swift 条件语句","Swift 循环","一起来背单词吧"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +43,7 @@ class TitleListVC: MXBaseViewController,UITableViewDelegate,UITableViewDataSourc
         let titleStr = self.titleArr[indexPath.row]
         
         cell.fillCellData(labelTitle: "\(titleStr)")
-        cell.backgroundColor = UIColor.gray
+        cell.backgroundColor = UIColor.white
         return cell
     }
     
@@ -103,6 +103,11 @@ class TitleListVC: MXBaseViewController,UITableViewDelegate,UITableViewDataSourc
             let ifVC : MXSwiftIfVC = MXSwiftIfVC.init()
             ifVC.title = titleStr
             self.navigationController?.pushViewController(ifVC, animated: true)
+        }else if titleStr == "Swift 循环" {
+            //FIXME: Swift 循环
+            let forVC : MXSwiftForVC = MXSwiftForVC.init()
+            forVC.title = titleStr
+            self.navigationController?.pushViewController(forVC, animated: true)
             
         }else if titleStr == "一起来背单词吧" {
             //FIXME: Swift 一起来背单词吧

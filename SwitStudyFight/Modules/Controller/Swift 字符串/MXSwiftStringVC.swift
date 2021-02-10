@@ -127,6 +127,8 @@ class MXSwiftStringVC: MXBaseViewController {
     }
     
     //MARK: Unicode 字符串
+    
+    /// 字符串
     func funcStringUnicode() {
         
         let unicodeString = "百度网址："

@@ -151,5 +151,23 @@ class MXSwiftStringVC: MXBaseViewController {
         let myInt : Int? = Int(myString)
         print(myInt!)
         
+        
+        if unicodeString.contains("百度") {
+            print("包含")
+        } else {
+            print("不包含")
+        }
+        
+        if unicodeString.hasPrefix("百度") {
+            print("前缀是百度")
+        }else {
+            print("前缀不是百度")
+        }
+        
+        if unicodeString.hasSuffix("") {
+            print("后缀是：")
+        }else {
+            print("后缀不是：")
+        }
     }
 }

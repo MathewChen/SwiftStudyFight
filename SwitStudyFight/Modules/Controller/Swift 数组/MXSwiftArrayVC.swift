@@ -12,6 +12,14 @@ class MXSwiftArrayVC: MXBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //推荐
+        let arrayInt : [Int] = []
+        let arrayString : [String] = []
+        
+        //不推荐
+        let arrayInt2 = [Int]()
+        let arrayString2 = [String]()
+        
         self.funcInitArrray()
         self.funcVisitArray()
         self.funcForArray()

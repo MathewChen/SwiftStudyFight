@@ -9,7 +9,7 @@ import UIKit
 
 class TitleListVC: MXBaseViewController,UITableViewDelegate,UITableViewDataSource {
 
-    var titleArr : NSArray = ["Swift 基本语法","Swift 数据类型","Swift 变量","Swift 可选类型","Swift 常量","Swift 字面量","Swift 运算符","Swift 条件语句","Swift 循环","Swift 字符串","Swift 字符","Swift 数组","一起来背单词吧"]
+    var titleArr : NSArray = ["Swift 基本语法","Swift 数据类型","Swift 变量","Swift 可选类型","Swift 常量","Swift 字面量","Swift 运算符","Swift 条件语句","Swift 循环","Swift 字符串","Swift 字符","Swift 数组","Swift 字典","一起来背单词吧"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +26,7 @@ class TitleListVC: MXBaseViewController,UITableViewDelegate,UITableViewDataSourc
         tableView.backgroundColor = UIColor.white
         tableView.register(TitleListCell.classForCoder(), forCellReuseIdentifier: "testCellId")
         
-        self.capital()
+//        self.capital()
     }
     
     //MARK: UITableViewDelegate
@@ -126,6 +126,12 @@ class TitleListVC: MXBaseViewController,UITableViewDelegate,UITableViewDataSourc
             let arrayVC : MXSwiftArrayVC = MXSwiftArrayVC.init()
             arrayVC.title = titleStr
             self.navigationController?.pushViewController(arrayVC, animated: true)
+            
+        }else if titleStr == "Swift 字典" {
+            //FIXME: Swift 字典
+            let dicVC : MXSwiftDicVC = MXSwiftDicVC.init()
+            dicVC.title = titleStr
+            self.navigationController?.pushViewController(dicVC, animated: true)
             
         }else if titleStr == "一起来背单词吧" {
             //FIXME: Swift 一起来背单词吧

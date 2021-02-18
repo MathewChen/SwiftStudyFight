@@ -9,7 +9,7 @@ import UIKit
 
 class TitleListVC: MXBaseViewController,UITableViewDelegate,UITableViewDataSource {
 
-    var titleArr : NSArray = ["Swift 基本语法","Swift 数据类型","Swift 变量","Swift 可选类型","Swift 常量","Swift 字面量","Swift 运算符","Swift 条件语句","Swift 循环","Swift 字符串","Swift 字符","一起来背单词吧"]
+    var titleArr : NSArray = ["Swift 基本语法","Swift 数据类型","Swift 变量","Swift 可选类型","Swift 常量","Swift 字面量","Swift 运算符","Swift 条件语句","Swift 循环","Swift 字符串","Swift 字符","Swift 数组","一起来背单词吧"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -116,10 +116,16 @@ class TitleListVC: MXBaseViewController,UITableViewDelegate,UITableViewDataSourc
             self.navigationController?.pushViewController(stringVC, animated: true)
             
         }else if titleStr == "Swift 字符" {
-            //FIXME: "Swift 字符"
+            //FIXME: Swift 字符
             let characterVC : MXSwiftCharacterVC = MXSwiftCharacterVC.init()
             characterVC.title = titleStr
             self.navigationController?.pushViewController(characterVC, animated: true)
+            
+        }else if titleStr == "Swift 数组" {
+            //FIXME: Swift 数组
+            let arrayVC : MXSwiftArrayVC = MXSwiftArrayVC.init()
+            arrayVC.title = titleStr
+            self.navigationController?.pushViewController(arrayVC, animated: true)
             
         }else if titleStr == "一起来背单词吧" {
             //FIXME: Swift 一起来背单词吧

@@ -129,6 +129,8 @@ class MXSwiftDicVC: MXBaseViewController {
     }
     
     //MARK: isEmpty 属性
+    
+    /// isEmpty 属性
     func funcDicIsEmpty() {
         let someDict1:[Int:String] = [1:"One", 2:"Two", 3:"Three"]
         let someDict2:[Int:String] = [4:"Four", 5:"Five"]

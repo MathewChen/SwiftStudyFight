@@ -9,7 +9,14 @@ import UIKit
 
 class TitleListVC: MXBaseViewController,UITableViewDelegate,UITableViewDataSource {
 
-    var titleArr : NSArray = ["Swift 基本语法","Swift 数据类型","Swift 变量","Swift 可选类型","Swift 常量","Swift 字面量","Swift 运算符","Swift 条件语句","Swift 循环","Swift 字符串","Swift 字符","Swift 数组","Swift 字典","一起来背单词吧"]
+    /*
+     
+     RUNOOB
+     基础语法 学习地址：
+     https://www.runoob.com/swift/swift-tutorial.html
+     
+     */
+    var titleArr : NSArray = ["Swift 基本语法","Swift 数据类型","Swift 变量","Swift 可选类型","Swift 常量","Swift 字面量","Swift 运算符","Swift 条件语句","Swift 循环","Swift 字符串","Swift 字符","Swift 数组","Swift 字典","Swift 函数","一起来背单词吧"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -132,6 +139,12 @@ class TitleListVC: MXBaseViewController,UITableViewDelegate,UITableViewDataSourc
             let dicVC : MXSwiftDicVC = MXSwiftDicVC.init()
             dicVC.title = titleStr
             self.navigationController?.pushViewController(dicVC, animated: true)
+            
+        }else if titleStr == "Swift 函数" {
+            //FIXME: Swift 字典
+            let funcVC : MXSwiftFuncVC = MXSwiftFuncVC.init()
+            funcVC.title = titleStr
+            self.navigationController?.pushViewController(funcVC, animated: true)
             
         }else if titleStr == "一起来背单词吧" {
             //FIXME: Swift 一起来背单词吧

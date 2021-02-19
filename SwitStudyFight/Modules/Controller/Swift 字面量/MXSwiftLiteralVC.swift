@@ -18,9 +18,9 @@ class MXSwiftLiteralVC: MXBaseViewController {
         
         print("aNumber = \(aNumber) aString = \(aString) aBool = \(aBool)")
         
-        self.intLiteral()
-        self.doubleLiteral()
-        self.charactersLiteral()
+        intLiteral()
+        doubleLiteral()
+        charactersLiteral()
     }
 
     //FIXME: 整型字面量

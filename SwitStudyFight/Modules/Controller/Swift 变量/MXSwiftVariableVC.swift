@@ -12,9 +12,9 @@ class MXSwiftVariableVC: MXBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.variableName()
+        variableName()
         
-        self.variableName2()
+        variableName2()
     }
 
     //MARK: 变量声明

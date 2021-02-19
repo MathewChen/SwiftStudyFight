@@ -12,11 +12,11 @@ class MXSwiftIfVC: MXBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.ifStatement()
-        self.ifElseStatement()
-        self.ifElseIfEElseStatement()
-        self.embeddedIfStatement()
-        self.switchStatement(index: 10)
+        ifStatement()
+        ifElseStatement()
+        ifElseIfEElseStatement()
+        embeddedIfStatement()
+        switchStatement(index: 10)
     }
     
     //FIXME: if语句

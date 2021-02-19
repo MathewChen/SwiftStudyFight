@@ -12,13 +12,13 @@ class MXSwiftOperatorVC: MXBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.suanshuOperator()
-        self.compareOperator()
-        self.logicOperator()
-        self.bitwiseOperator()
-        self.assignmentOperation()
-        self.intervalOperator()
-        self.otherOperator()
+        suanshuOperator()
+        compareOperator()
+        logicOperator()
+        bitwiseOperator()
+        assignmentOperation()
+        intervalOperator()
+        otherOperator()
         
     }
 

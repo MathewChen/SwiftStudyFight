@@ -46,7 +46,7 @@ class MXSwiftBasicLanguage: MXBaseViewController {
         
         var fenhao = "fenhao"; print(fenhao); fenhao = "分号变了"; print(fenhao)
         
-        self.biaoshifu()
+        biaoshifu()
         
         //FIXME: 空格
         /*

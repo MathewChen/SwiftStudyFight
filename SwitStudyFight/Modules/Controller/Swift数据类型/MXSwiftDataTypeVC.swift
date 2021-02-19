@@ -12,13 +12,13 @@ class MXSwiftDataTypeVC: MXBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.builtInDataTypes()
+        builtInDataTypes()
         
-        self.typealiasFunc()
+        typealiasFunc()
         
-        self.typeSafe()
+        typeSafe()
         
-        self.typeInference()
+        typeInference()
     }
     
     //MARK: 内置数据类型

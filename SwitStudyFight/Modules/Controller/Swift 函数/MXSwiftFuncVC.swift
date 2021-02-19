@@ -12,16 +12,53 @@ class MXSwiftFuncVC: MXBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print(self.runoob(site: "www.baidu.com"))
+        print(runoob(site: "www.baidu.com"))
         
-        print(self.websiteDetail(name: "百度", site: "www.baidu.com"))
-        print(self.websiteDetail(name: "Google", site: "www.google.com"))
+        print(websiteDetail(name: "百度", site: "www.baidu.com"))
+        print(websiteDetail(name: "Google", site: "www.google.com"))
         
-        print(self.siteName())
+        print(siteName())
         
         let bounds = minMax(array: [8, -6, 2, 109, 3, 71])
         print("最小值为 \(bounds.min) ，最大值为 \(bounds.max)")
         
+        baidu(side: "www.baidu.com")
+        
+        var num = pow(firstArg: 5, secondArg: 3)
+        num += num
+        
+        
+        vari(members: 4,3,5)
+        vari(members: 4.5,3.1,5.6)
+        vari(members: "Google","Baidu","Apple")
+        
+        
+        var x = 1
+        var y = 5
+        
+        swapTwoInts(&x, &y)
+        print("x 现在的值 \(x), y 现在的值 \(y)")
+        
+        print(inputs(no1: 20, no2: 10))
+        print(inputs(no1: 36, no2: 6))
+        
+        /*
+         使用函数类型
+         在Swift中，使用函数类型就像使用其他类型一样。例如，你可以定义一个类型为函数的常量或变量，并将适当的函数赋值给它：
+         */
+        
+        let addition: (Int,Int) -> Int = sum
+        print("addition = 输出结果：\(addition(40,89))")
+        
+        /*
+         函数类型作为参数类型、函数类型作为返回类型
+         我们可以将函数作为参数传递给另外一个参数：
+         */
+        
+        another(addition: sum, a: 10, b: 20)
+        
+        let decrem = calcDeccrement(forDecrement: 30)
+        print(decrem())
     }
 
     //MARK: 函数调用
@@ -77,5 +114,81 @@ class MXSwiftFuncVC: MXBaseViewController {
         }
         
         return (currentMin, currentMax)
+    }
+    
+    //MARK: 没有返回值函数
+    
+    /// 没有返回值函数
+    /// - Parameter side: 网址
+    func baidu(side: String) {
+        print("这是一个网站：\(side)")
+    }
+     
+    //MARK: 外部参数名
+    
+    /// 外部参数名
+    /// - Parameters:
+    ///   - a: 参数 a
+    ///   - b: 参数 b
+    /// - Returns: 返回计算结果
+    func pow(firstArg a:Int, secondArg b:Int) -> Int {
+        var res = a
+        for _ in 1..<b {
+            res = res * a
+        }
+        print(res)
+        return res
+    }
+    
+    //MARK: 可变参数
+    func vari<N>(members: N...) {
+        for i in members {
+            print(print(i))
+        }
+    }
+    
+    //MARK: 常量，变量及 I/O 参数
+    
+    /// 常量，变量及 I/O 参数
+    /// - Parameters:
+    ///   - a: 参数
+    ///   - b: 参数
+    func swapTwoInts(_ a: inout Int, _ b: inout Int) {
+        let temporaryA = a
+        
+        a = b
+        
+        b = temporaryA
+        
+    }
+    
+    //MARK: 函数类型及使用
+    func inputs(no1: Int, no2: Int) -> Int {
+        return no1/no2
+    }
+    
+    //MARK: 函数类型作为参数类型、函数类型作为返回类型
+    
+    func sum(a: Int, b: Int) -> Int {
+       return a + b
+    }
+    
+    func another(addition: (Int, Int) -> Int, a: Int, b: Int) {
+        print("输出结果: \(addition(a, b))")
+    }
+    
+    //MARK: 函数嵌套
+    
+    /// 函数嵌套
+    /// - Parameter total: 输入值
+    /// - Returns: 返回值
+    func calcDeccrement(forDecrement total:Int) -> () -> Int {
+        
+        var overallDecrement = 0
+        func decrementer() -> Int {
+            overallDecrement -= total
+            return overallDecrement
+        }
+        return decrementer
     }
 }

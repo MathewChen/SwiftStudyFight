@@ -13,7 +13,7 @@ class MXBaseViewController: UIViewController {
         super.viewDidLoad()
 
         //默认白色背景
-        self.view.backgroundColor = UIColor.white
+        view.backgroundColor = UIColor.white
     }
 
 }

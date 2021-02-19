@@ -21,13 +21,13 @@ class MXSwiftStringVC: MXBaseViewController {
         print(stringA)
         print(stringB)
         
-        self.funcEmptyString()
-        self.funcConstant()
-        self.funcInsertStr()
-        self.funcStringConnect()
-        self.funcStringCount()
-        self.funcStringComparison()
-        self.funcStringUnicode()
+        funcEmptyString()
+        funcConstant()
+        funcInsertStr()
+        funcStringConnect()
+        funcStringCount()
+        funcStringComparison()
+        funcStringUnicode()
     }
 
     

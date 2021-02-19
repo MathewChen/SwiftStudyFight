@@ -20,12 +20,12 @@ class MXSwiftArrayVC: MXBaseViewController {
         let arrayInt2 = [Int]()
         let arrayString2 = [String]()
         
-        self.funcInitArrray()
-        self.funcVisitArray()
-        self.funcForArray()
-        self.funcArrayMerge()
-        self.funcArrayCount()
-        self.funcArrayIsEmpty()
+        funcInitArrray()
+        funcVisitArray()
+        funcForArray()
+        funcArrayMerge()
+        funcArrayCount()
+        funcArrayIsEmpty()
     }
 
     //MARK: 创建数组

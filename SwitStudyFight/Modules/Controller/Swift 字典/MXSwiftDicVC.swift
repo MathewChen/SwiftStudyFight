@@ -12,11 +12,11 @@ class MXSwiftDicVC: MXBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.funcDicInit()
-        self.funcDicVisit()
-        self.funcDicUpdateValue()
-        self.funcDicRemove()
-        self.funcDicFor()
+        funcDicInit()
+        funcDicVisit()
+        funcDicUpdateValue()
+        funcDicRemove()
+        funcDicFor()
     }
     
     //MARK: 创建字典

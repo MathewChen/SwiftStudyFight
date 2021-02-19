@@ -18,9 +18,9 @@ class MXSwiftCharacterVC: MXBaseViewController {
         print("char1 的值为 \(char1)")
         print("char2 的值为 \(char2)")
         
-        self.funcCharacterFor()
-        self.funcCharacterMoreWords()
-        self.funcCharacterAppend()
+        funcCharacterFor()
+        funcCharacterMoreWords()
+        funcCharacterAppend()
     }
     
     //MARK: 一些错误的赋值

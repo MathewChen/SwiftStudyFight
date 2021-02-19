@@ -12,12 +12,12 @@ class MXSwiftForVC: MXBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.funcForIn()
-        self.funcWhile()
-        self.funcRepeatWhile()
-        self.funcContinue()
-        self.funcBreak()
-        self.funcFallthrough(index: 10)
+        funcForIn()
+        funcWhile()
+        funcRepeatWhile()
+        funcContinue()
+        funcBreak()
+        funcFallthrough(index: 10)
     }
 
     //MARK: for-in 循环

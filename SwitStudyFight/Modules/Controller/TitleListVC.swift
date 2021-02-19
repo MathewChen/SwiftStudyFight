@@ -21,24 +21,23 @@ class TitleListVC: MXBaseViewController,UITableViewDelegate,UITableViewDataSourc
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //        self.title = "Swift学习"
-        self.title = "加油！！！"
+        //        title = "Swift学习"
+//        title = "加油！！！"
+        title = "加油！！！"
+        let tableView : UITableView = UITableView.init(frame: view.bounds, style: .plain)
         
-        let tableView : UITableView = UITableView.init(frame: self.view.bounds, style: .plain)
-        
-        self.view .addSubview(tableView)
-        
+        view.addSubview(tableView)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = UIColor.white
         tableView.register(TitleListCell.classForCoder(), forCellReuseIdentifier: "testCellId")
         
-//        self.capital()
+//        capital()
     }
     
     //MARK: UITableViewDelegate
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.titleArr.count
+        return titleArr.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -47,7 +46,7 @@ class TitleListVC: MXBaseViewController,UITableViewDelegate,UITableViewDataSourc
         
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId) as! TitleListCell
         
-        let titleStr = self.titleArr[indexPath.row]
+        let titleStr = titleArr[indexPath.row]
         
         cell.fillCellData(labelTitle: "\(titleStr)")
         cell.backgroundColor = UIColor.white
@@ -61,96 +60,96 @@ class TitleListVC: MXBaseViewController,UITableViewDelegate,UITableViewDataSourc
     //MARK: 点击Cell
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let titleStr : String = self.titleArr[indexPath.row] as! String
+        let titleStr : String = titleArr[indexPath.row] as! String
         
         if titleStr == "Swift 基本语法" {
             //FIXME: Swift 基本语法
             let basicVC : MXSwiftBasicLanguage = MXSwiftBasicLanguage.init()
             basicVC.title = titleStr
-            self.navigationController?.pushViewController(basicVC, animated: true)
+            navigationController?.pushViewController(basicVC, animated: true)
             
         }else if titleStr == "Swift 数据类型" {
             //FIXME: Swift 数据类型
             let dataTypeVC = MXSwiftDataTypeVC.init()
             dataTypeVC.title = titleStr
-            self.navigationController?.pushViewController(dataTypeVC, animated: true)
+            navigationController?.pushViewController(dataTypeVC, animated: true)
             
         }else if titleStr == "Swift 变量" {
             //FIXME: Swift 变量
             let basic : MXSwiftVariableVC = MXSwiftVariableVC.init()
             basic.title = titleStr
-            self.navigationController?.pushViewController(basic, animated: true)
+            navigationController?.pushViewController(basic, animated: true)
             
         }else if titleStr == "Swift 可选类型" {
             //FIXME: Swift 可选类型
             let optionalVC : MXSwiftOptionalsVC = MXSwiftOptionalsVC.init()
             optionalVC.title = titleStr
-            self.navigationController?.pushViewController(optionalVC, animated: true)
+            navigationController?.pushViewController(optionalVC, animated: true)
             
         }else if titleStr == "Swift 常量" {
             //FIXME: Swift 常量
             let letVC:MXSwiftLetVC = MXSwiftLetVC.init()
             letVC.title = titleStr
-            self.navigationController?.pushViewController(letVC, animated: true)
+            navigationController?.pushViewController(letVC, animated: true)
             
         }else if titleStr == "Swift 字面量" {
             //FIXME: Swift 字面量
             let literalVC : MXSwiftLiteralVC = MXSwiftLiteralVC.init()
             literalVC.title = titleStr
-            self.navigationController?.pushViewController(literalVC, animated: true)
+            navigationController?.pushViewController(literalVC, animated: true)
             
         }else if titleStr == "Swift 运算符" {
             //FIXME: Swift 运算符
             let operatorVC : MXSwiftOperatorVC = MXSwiftOperatorVC.init()
             operatorVC.title = titleStr
-            self.navigationController?.pushViewController(operatorVC, animated: true)
+            navigationController?.pushViewController(operatorVC, animated: true)
             
         }else if titleStr == "Swift 条件语句" {
             //FIXME: Swift 条件语句
             let ifVC : MXSwiftIfVC = MXSwiftIfVC.init()
             ifVC.title = titleStr
-            self.navigationController?.pushViewController(ifVC, animated: true)
+            navigationController?.pushViewController(ifVC, animated: true)
         }else if titleStr == "Swift 循环" {
             //FIXME: Swift 循环
             let forVC : MXSwiftForVC = MXSwiftForVC.init()
             forVC.title = titleStr
-            self.navigationController?.pushViewController(forVC, animated: true)
+            navigationController?.pushViewController(forVC, animated: true)
             
         }else if titleStr == "Swift 字符串" {
             //FIXME: Swift 字符串
             let stringVC : MXSwiftStringVC = MXSwiftStringVC.init()
             stringVC.title = titleStr
-            self.navigationController?.pushViewController(stringVC, animated: true)
+            navigationController?.pushViewController(stringVC, animated: true)
             
         }else if titleStr == "Swift 字符" {
             //FIXME: Swift 字符
             let characterVC : MXSwiftCharacterVC = MXSwiftCharacterVC.init()
             characterVC.title = titleStr
-            self.navigationController?.pushViewController(characterVC, animated: true)
+            navigationController?.pushViewController(characterVC, animated: true)
             
         }else if titleStr == "Swift 数组" {
             //FIXME: Swift 数组
             let arrayVC : MXSwiftArrayVC = MXSwiftArrayVC.init()
             arrayVC.title = titleStr
-            self.navigationController?.pushViewController(arrayVC, animated: true)
+            navigationController?.pushViewController(arrayVC, animated: true)
             
         }else if titleStr == "Swift 字典" {
             //FIXME: Swift 字典
             let dicVC : MXSwiftDicVC = MXSwiftDicVC.init()
             dicVC.title = titleStr
-            self.navigationController?.pushViewController(dicVC, animated: true)
+            navigationController?.pushViewController(dicVC, animated: true)
             
         }else if titleStr == "Swift 函数" {
             //FIXME: Swift 字典
             let funcVC : MXSwiftFuncVC = MXSwiftFuncVC.init()
             funcVC.title = titleStr
-            self.navigationController?.pushViewController(funcVC, animated: true)
+            navigationController?.pushViewController(funcVC, animated: true)
             
         }else if titleStr == "一起来背单词吧" {
             //FIXME: Swift 一起来背单词吧
             let wordsVC : MXWordsVC = MXWordsVC.init()
             wordsVC.title = titleStr
-            self.navigationController?.pushViewController(wordsVC, animated: true)
+            navigationController?.pushViewController(wordsVC, animated: true)
             
         }
     }
@@ -161,7 +160,7 @@ class TitleListVC: MXBaseViewController,UITableViewDelegate,UITableViewDataSourc
         var num : Float = startNum
         let mouthNum : Float = 100000 / 12
         for index in 0...120 {
-            num = self.getTheReal(startCapital: num, mouthCapital: mouthNum, mouthRate: 0.019)
+            num = getTheReal(startCapital: num, mouthCapital: mouthNum, mouthRate: 0.019)
             
             let totalCapital = startNum + mouthNum * Float(index)
             

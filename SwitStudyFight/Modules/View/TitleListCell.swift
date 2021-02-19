@@ -28,7 +28,7 @@ class TitleListCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        self.addUI()
+        addUI()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -37,12 +37,12 @@ class TitleListCell: UITableViewCell {
     }
     
     func addUI() {
-        self.addSubview(self.labelTop)
-        self.labelTop.frame = CGRect(x: 16, y: 0, width: 300, height: 60)
+        addSubview(labelTop)
+        labelTop.frame = CGRect(x: 16, y: 0, width: 300, height: 60)
     }
     
     ///数据填充
     func fillCellData(labelTitle : String) {
-        self.labelTop.text = labelTitle
+        labelTop.text = labelTitle
     }
 }

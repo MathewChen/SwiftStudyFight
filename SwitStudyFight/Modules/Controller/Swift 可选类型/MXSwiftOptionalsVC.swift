@@ -25,10 +25,10 @@ class MXSwiftOptionalsVC: MXBaseViewController {
         
         print(optionalInteger2)
         
-        self.stringOptional()
-        self.stringForcedUnwrapping()
-        self.stringAutoUnwrapping()
-        self.stringOptionalBinding()
+        stringOptional()
+        stringForcedUnwrapping()
+        stringAutoUnwrapping()
+        stringOptionalBinding()
     }
 
     func stringOptional() {

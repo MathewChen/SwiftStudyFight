@@ -18,6 +18,7 @@
 		28999B6E25DE0A5300F995B7 /* MXSwiftArrayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28999B6D25DE0A5300F995B7 /* MXSwiftArrayVC.swift */; };
 		28999B7725DE18DE00F995B7 /* MXSwiftDicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28999B7625DE18DE00F995B7 /* MXSwiftDicVC.swift */; };
 		28999B8825DE6C6B00F995B7 /* MXSwiftFuncVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28999B8725DE6C6B00F995B7 /* MXSwiftFuncVC.swift */; };
+		28999B9125DFBD7A00F995B7 /* MXSwiftClosuresVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28999B9025DFBD7A00F995B7 /* MXSwiftClosuresVC.swift */; };
 		28C8690B25CBEA730080AD5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8690A25CBEA730080AD5E /* AppDelegate.swift */; };
 		28C8690D25CBEA730080AD5E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8690C25CBEA730080AD5E /* SceneDelegate.swift */; };
 		28C8691225CBEA730080AD5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C8691025CBEA730080AD5E /* Main.storyboard */; };
@@ -63,6 +64,7 @@
 		28999B6D25DE0A5300F995B7 /* MXSwiftArrayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftArrayVC.swift; sourceTree = "<group>"; };
 		28999B7625DE18DE00F995B7 /* MXSwiftDicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftDicVC.swift; sourceTree = "<group>"; };
 		28999B8725DE6C6B00F995B7 /* MXSwiftFuncVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftFuncVC.swift; sourceTree = "<group>"; };
+		28999B9025DFBD7A00F995B7 /* MXSwiftClosuresVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftClosuresVC.swift; sourceTree = "<group>"; };
 		28C8690725CBEA730080AD5E /* SwitStudyFight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwitStudyFight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28C8690A25CBEA730080AD5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28C8690C25CBEA730080AD5E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -198,6 +200,14 @@
 			path = "Swift 函数";
 			sourceTree = "<group>";
 		};
+		28999B8F25DFBD4A00F995B7 /* Swift 闭包 */ = {
+			isa = PBXGroup;
+			children = (
+				28999B9025DFBD7A00F995B7 /* MXSwiftClosuresVC.swift */,
+			);
+			path = "Swift 闭包";
+			sourceTree = "<group>";
+		};
 		28C868FE25CBEA730080AD5E = {
 			isa = PBXGroup;
 			children = (
@@ -279,6 +289,7 @@
 				28999B6C25DE091600F995B7 /* Swift 数组 */,
 				28999B7525DE189D00F995B7 /* Swift 字典 */,
 				28999B8625DE6C2400F995B7 /* Swift 函数 */,
+				28999B8F25DFBD4A00F995B7 /* Swift 闭包 */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -471,6 +482,7 @@
 				28C869C725CD29610080AD5E /* MXSwiftOptionalsVC.swift in Sources */,
 				2890226125D129F3008D0E55 /* MXSwiftIfVC.swift in Sources */,
 				28999B8825DE6C6B00F995B7 /* MXSwiftFuncVC.swift in Sources */,
+				28999B9125DFBD7A00F995B7 /* MXSwiftClosuresVC.swift in Sources */,
 				2890221F25CE416B008D0E55 /* MXSwiftLetVC.swift in Sources */,
 				28999B6E25DE0A5300F995B7 /* MXSwiftArrayVC.swift in Sources */,
 				28C869BB25CD24580080AD5E /* MXBaseViewController.swift in Sources */,

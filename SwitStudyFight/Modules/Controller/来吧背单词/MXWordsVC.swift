@@ -349,6 +349,10 @@ class MXWordsVC: MXBaseViewController {
         let interval = "interval"
         print(interval)
         
+        //83:Closures
+        let closures = "closures"
+        print(closures)
+        
     }
     
     

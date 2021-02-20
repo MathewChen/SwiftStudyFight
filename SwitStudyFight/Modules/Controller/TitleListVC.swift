@@ -16,7 +16,7 @@ class TitleListVC: MXBaseViewController,UITableViewDelegate,UITableViewDataSourc
      https://www.runoob.com/swift/swift-tutorial.html
      
      */
-    var titleArr : NSArray = ["Swift 基本语法","Swift 数据类型","Swift 变量","Swift 可选类型","Swift 常量","Swift 字面量","Swift 运算符","Swift 条件语句","Swift 循环","Swift 字符串","Swift 字符","Swift 数组","Swift 字典","Swift 函数","一起来背单词吧"]
+    var titleArr : NSArray = ["Swift 基本语法","Swift 数据类型","Swift 变量","Swift 可选类型","Swift 常量","Swift 字面量","Swift 运算符","Swift 条件语句","Swift 循环","Swift 字符串","Swift 字符","Swift 数组","Swift 字典","Swift 函数","Swift 枚举","一起来背单词吧"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -144,6 +144,12 @@ class TitleListVC: MXBaseViewController,UITableViewDelegate,UITableViewDataSourc
             let funcVC : MXSwiftFuncVC = MXSwiftFuncVC.init()
             funcVC.title = titleStr
             navigationController?.pushViewController(funcVC, animated: true)
+            
+        }else if titleStr == "Swift 枚举" {
+            //FIXME: Swift 枚举
+            let enumVC : MXSwiftEnumVC = MXSwiftEnumVC.init()
+            enumVC.title = titleStr
+            navigationController?.pushViewController(enumVC, animated: true)
             
         }else if titleStr == "一起来背单词吧" {
             //FIXME: Swift 一起来背单词吧

@@ -19,14 +19,29 @@ class MXSwiftEnumVC: MXBaseViewController {
         case FRIDAY
         case Saturday
     }
+    
+    enum Student {
+        case Name(String)
+        case Mark(Int,Int,Int)
+    }
+    
+    
+    enum Mouth:Int {
+        case January = 1, February, March, April, May, June, July, August, September, October, November, December
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         var weekDay = DaysofaWeek.THURSDAY
         
-            weekDay = .Sunday
+            weekDay = .WEDNESDAY
         
         whichDay(weekDay: weekDay)
+        studentDemo()
+        getMouth()
+        lplName(teamName: .RNG)
     }
     
     
@@ -53,5 +68,49 @@ class MXSwiftEnumVC: MXBaseViewController {
         
     }
 
-
+    func studentDemo() {
+        let studentName = Student.Name("Matthew")
+        let studentMark = Student.Mark(59, 50, 50)
+        
+        switch studentName {
+        case .Name(let studName):
+            print("学生的名字是：\(studName)")
+        case .Mark(let Mark1, let Mark2, let Mark3):
+            print("学生的成绩是：\(Mark1),\(Mark2),\(Mark3)")
+        }
+    }
+    
+    func getMouth() {
+        let yearMouth = Mouth.May.rawValue
+        
+        print("数字的月份是：\(yearMouth)")
+    }
+    
+    enum LolTeamName {
+        case IG
+        case FPX
+        case RNG
+        case EDG
+        case SN
+        case LGD
+    }
+    
+    func lplName(teamName:LolTeamName) {
+        switch teamName {
+        case .IG:
+            print("这个队是IG")
+        case .FPX:
+            print("这个队是FPX")
+        case .RNG:
+            print("这个队是RNG")
+        case .EDG:
+            print("这个队是EDG")
+        case .SN:
+            print("这个队是SN")
+        case .LGD:
+            print("这个队是LGD")
+        default:
+            print("这个队暂时没有收录")
+        }
+    }
 }

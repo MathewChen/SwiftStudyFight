@@ -35,6 +35,7 @@
 		28C869B225CD240C0080AD5E /* MXSwiftVariableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C869B125CD240C0080AD5E /* MXSwiftVariableVC.swift */; };
 		28C869BB25CD24580080AD5E /* MXBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C869BA25CD24580080AD5E /* MXBaseViewController.swift */; };
 		28C869C725CD29610080AD5E /* MXSwiftOptionalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C869C625CD29610080AD5E /* MXSwiftOptionalsVC.swift */; };
+		28F4BA1D25F9B15A007A39A4 /* MXSwiftClassVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F4BA1C25F9B15A007A39A4 /* MXSwiftClassVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		28C869B125CD240C0080AD5E /* MXSwiftVariableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftVariableVC.swift; sourceTree = "<group>"; };
 		28C869BA25CD24580080AD5E /* MXBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXBaseViewController.swift; sourceTree = "<group>"; };
 		28C869C625CD29610080AD5E /* MXSwiftOptionalsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftOptionalsVC.swift; sourceTree = "<group>"; };
+		28F4BA1C25F9B15A007A39A4 /* MXSwiftClassVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftClassVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -312,6 +314,7 @@
 				28999B8F25DFBD4A00F995B7 /* Swift 闭包 */,
 				28999BA125E1089C00F995B7 /* Swift 枚举 */,
 				2829C7F525F8B1E4004A4F9D /* Swift 结构体 */,
+				28F4BA1B25F9B136007A39A4 /* Swift 类 */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -362,6 +365,14 @@
 				28C869C625CD29610080AD5E /* MXSwiftOptionalsVC.swift */,
 			);
 			path = "Swift 可选类型";
+			sourceTree = "<group>";
+		};
+		28F4BA1B25F9B136007A39A4 /* Swift 类 */ = {
+			isa = PBXGroup;
+			children = (
+				28F4BA1C25F9B15A007A39A4 /* MXSwiftClassVC.swift */,
+			);
+			path = "Swift 类";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -494,6 +505,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28F4BA1D25F9B15A007A39A4 /* MXSwiftClassVC.swift in Sources */,
 				28C869B225CD240C0080AD5E /* MXSwiftVariableVC.swift in Sources */,
 				28C869A325CBFB840080AD5E /* MXSwiftBasicLanguage.swift in Sources */,
 				2890227925D2244D008D0E55 /* MXSwiftStringVC.swift in Sources */,

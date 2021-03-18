@@ -22,6 +22,8 @@
 		28999B9125DFBD7A00F995B7 /* MXSwiftClosuresVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28999B9025DFBD7A00F995B7 /* MXSwiftClosuresVC.swift */; };
 		28999BA325E108C000F995B7 /* MXSwiftEnumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28999BA225E108C000F995B7 /* MXSwiftEnumVC.swift */; };
 		28B2F3F025FA1F1A00228B42 /* MXSwiftPropertyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B2F3EF25FA1F1A00228B42 /* MXSwiftPropertyVC.swift */; };
+		28B2F55D260329BC00228B42 /* MXSwiftMethodVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B2F55C260329BC00228B42 /* MXSwiftMethodVC.swift */; };
+		28B2F56526032B3100228B42 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B2F56426032B3100228B42 /* Counter.swift */; };
 		28C8690B25CBEA730080AD5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8690A25CBEA730080AD5E /* AppDelegate.swift */; };
 		28C8690D25CBEA730080AD5E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8690C25CBEA730080AD5E /* SceneDelegate.swift */; };
 		28C8691225CBEA730080AD5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C8691025CBEA730080AD5E /* Main.storyboard */; };
@@ -72,6 +74,8 @@
 		28999B9025DFBD7A00F995B7 /* MXSwiftClosuresVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftClosuresVC.swift; sourceTree = "<group>"; };
 		28999BA225E108C000F995B7 /* MXSwiftEnumVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftEnumVC.swift; sourceTree = "<group>"; };
 		28B2F3EF25FA1F1A00228B42 /* MXSwiftPropertyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftPropertyVC.swift; sourceTree = "<group>"; };
+		28B2F55C260329BC00228B42 /* MXSwiftMethodVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftMethodVC.swift; sourceTree = "<group>"; };
+		28B2F56426032B3100228B42 /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 		28C8690725CBEA730080AD5E /* SwitStudyFight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwitStudyFight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28C8690A25CBEA730080AD5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28C8690C25CBEA730080AD5E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -240,6 +244,15 @@
 			path = "Swift 属性";
 			sourceTree = "<group>";
 		};
+		28B2F3FA25FB3A3600228B42 /* Swift 方法 */ = {
+			isa = PBXGroup;
+			children = (
+				28B2F55C260329BC00228B42 /* MXSwiftMethodVC.swift */,
+				28B2F56426032B3100228B42 /* Counter.swift */,
+			);
+			path = "Swift 方法";
+			sourceTree = "<group>";
+		};
 		28C868FE25CBEA730080AD5E = {
 			isa = PBXGroup;
 			children = (
@@ -326,6 +339,7 @@
 				2829C7F525F8B1E4004A4F9D /* Swift 结构体 */,
 				28F4BA1B25F9B136007A39A4 /* Swift 类 */,
 				28B2F3EE25FA1EA800228B42 /* Swift 属性 */,
+				28B2F3FA25FB3A3600228B42 /* Swift 方法 */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -527,6 +541,7 @@
 				2890222825CE475F008D0E55 /* MXSwiftLiteralVC.swift in Sources */,
 				28C869C725CD29610080AD5E /* MXSwiftOptionalsVC.swift in Sources */,
 				2890226125D129F3008D0E55 /* MXSwiftIfVC.swift in Sources */,
+				28B2F55D260329BC00228B42 /* MXSwiftMethodVC.swift in Sources */,
 				28999B8825DE6C6B00F995B7 /* MXSwiftFuncVC.swift in Sources */,
 				28999B9125DFBD7A00F995B7 /* MXSwiftClosuresVC.swift in Sources */,
 				2890221F25CE416B008D0E55 /* MXSwiftLetVC.swift in Sources */,
@@ -538,6 +553,7 @@
 				2890225B25D10C17008D0E55 /* MXSwiftOperatorVC.swift in Sources */,
 				28C8690D25CBEA730080AD5E /* SceneDelegate.swift in Sources */,
 				2829C7F725F8B218004A4F9D /* MXSwiftStructVC.swift in Sources */,
+				28B2F56526032B3100228B42 /* Counter.swift in Sources */,
 				28C8698225CBF49F0080AD5E /* TitleListVC.swift in Sources */,
 				28C869A925CCEF220080AD5E /* MXSwiftDataTypeVC.swift in Sources */,
 				2890224F25D0D842008D0E55 /* MXWordsVC.swift in Sources */,

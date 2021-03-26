@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28103BC9260DAD040085B9E8 /* MXSwiftSubscriptVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28103BC8260DAD040085B9E8 /* MXSwiftSubscriptVC.swift */; };
 		2829C7F725F8B218004A4F9D /* MXSwiftStructVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2829C7F625F8B218004A4F9D /* MXSwiftStructVC.swift */; };
 		2890221F25CE416B008D0E55 /* MXSwiftLetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2890221E25CE416B008D0E55 /* MXSwiftLetVC.swift */; };
 		2890222825CE475F008D0E55 /* MXSwiftLiteralVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2890222725CE475F008D0E55 /* MXSwiftLiteralVC.swift */; };
@@ -59,6 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28103BC8260DAD040085B9E8 /* MXSwiftSubscriptVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftSubscriptVC.swift; sourceTree = "<group>"; };
 		2829C7F625F8B218004A4F9D /* MXSwiftStructVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftStructVC.swift; sourceTree = "<group>"; };
 		2890221E25CE416B008D0E55 /* MXSwiftLetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftLetVC.swift; sourceTree = "<group>"; };
 		2890222725CE475F008D0E55 /* MXSwiftLiteralVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftLiteralVC.swift; sourceTree = "<group>"; };
@@ -124,6 +126,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28103BC7260DAC9E0085B9E8 /* Swift 下标脚本 */ = {
+			isa = PBXGroup;
+			children = (
+				28103BC8260DAD040085B9E8 /* MXSwiftSubscriptVC.swift */,
+			);
+			path = "Swift 下标脚本";
+			sourceTree = "<group>";
+		};
 		2829C7F525F8B1E4004A4F9D /* Swift 结构体 */ = {
 			isa = PBXGroup;
 			children = (
@@ -340,6 +350,7 @@
 				28F4BA1B25F9B136007A39A4 /* Swift 类 */,
 				28B2F3EE25FA1EA800228B42 /* Swift 属性 */,
 				28B2F3FA25FB3A3600228B42 /* Swift 方法 */,
+				28103BC7260DAC9E0085B9E8 /* Swift 下标脚本 */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -547,6 +558,7 @@
 				2890221F25CE416B008D0E55 /* MXSwiftLetVC.swift in Sources */,
 				28999BA325E108C000F995B7 /* MXSwiftEnumVC.swift in Sources */,
 				28999B6E25DE0A5300F995B7 /* MXSwiftArrayVC.swift in Sources */,
+				28103BC9260DAD040085B9E8 /* MXSwiftSubscriptVC.swift in Sources */,
 				28C869BB25CD24580080AD5E /* MXBaseViewController.swift in Sources */,
 				2890226D25D1399A008D0E55 /* MXSwiftForVC.swift in Sources */,
 				28999B6525DE047300F995B7 /* MXSwiftCharacterVC.swift in Sources */,

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		28103BC9260DAD040085B9E8 /* MXSwiftSubscriptVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28103BC8260DAD040085B9E8 /* MXSwiftSubscriptVC.swift */; };
 		28103BD5260DBC660085B9E8 /* MXSwiftSuperVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28103BD4260DBC660085B9E8 /* MXSwiftSuperVC.swift */; };
+		28103C1D260DDFB90085B9E8 /* MXSwiftInitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28103C1C260DDFB90085B9E8 /* MXSwiftInitVC.swift */; };
 		2829C7F725F8B218004A4F9D /* MXSwiftStructVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2829C7F625F8B218004A4F9D /* MXSwiftStructVC.swift */; };
 		2890221F25CE416B008D0E55 /* MXSwiftLetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2890221E25CE416B008D0E55 /* MXSwiftLetVC.swift */; };
 		2890222825CE475F008D0E55 /* MXSwiftLiteralVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2890222725CE475F008D0E55 /* MXSwiftLiteralVC.swift */; };
@@ -63,6 +64,7 @@
 /* Begin PBXFileReference section */
 		28103BC8260DAD040085B9E8 /* MXSwiftSubscriptVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftSubscriptVC.swift; sourceTree = "<group>"; };
 		28103BD4260DBC660085B9E8 /* MXSwiftSuperVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftSuperVC.swift; sourceTree = "<group>"; };
+		28103C1C260DDFB90085B9E8 /* MXSwiftInitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftInitVC.swift; sourceTree = "<group>"; };
 		2829C7F625F8B218004A4F9D /* MXSwiftStructVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftStructVC.swift; sourceTree = "<group>"; };
 		2890221E25CE416B008D0E55 /* MXSwiftLetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftLetVC.swift; sourceTree = "<group>"; };
 		2890222725CE475F008D0E55 /* MXSwiftLiteralVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftLiteralVC.swift; sourceTree = "<group>"; };
@@ -142,6 +144,14 @@
 				28103BD4260DBC660085B9E8 /* MXSwiftSuperVC.swift */,
 			);
 			path = "Swift 继承";
+			sourceTree = "<group>";
+		};
+		28103BDF260DDA4D0085B9E8 /* Swift 构造过程 */ = {
+			isa = PBXGroup;
+			children = (
+				28103C1C260DDFB90085B9E8 /* MXSwiftInitVC.swift */,
+			);
+			path = "Swift 构造过程";
 			sourceTree = "<group>";
 		};
 		2829C7F525F8B1E4004A4F9D /* Swift 结构体 */ = {
@@ -362,6 +372,7 @@
 				28B2F3FA25FB3A3600228B42 /* Swift 方法 */,
 				28103BC7260DAC9E0085B9E8 /* Swift 下标脚本 */,
 				28103BD3260DBBEB0085B9E8 /* Swift 继承 */,
+				28103BDF260DDA4D0085B9E8 /* Swift 构造过程 */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -561,6 +572,7 @@
 				28B2F3F025FA1F1A00228B42 /* MXSwiftPropertyVC.swift in Sources */,
 				28C8690B25CBEA730080AD5E /* AppDelegate.swift in Sources */,
 				2890222825CE475F008D0E55 /* MXSwiftLiteralVC.swift in Sources */,
+				28103C1D260DDFB90085B9E8 /* MXSwiftInitVC.swift in Sources */,
 				28C869C725CD29610080AD5E /* MXSwiftOptionalsVC.swift in Sources */,
 				2890226125D129F3008D0E55 /* MXSwiftIfVC.swift in Sources */,
 				28B2F55D260329BC00228B42 /* MXSwiftMethodVC.swift in Sources */,

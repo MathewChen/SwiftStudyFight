@@ -18,6 +18,7 @@
 		2890226125D129F3008D0E55 /* MXSwiftIfVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2890226025D129F3008D0E55 /* MXSwiftIfVC.swift */; };
 		2890226D25D1399A008D0E55 /* MXSwiftForVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2890226C25D1399A008D0E55 /* MXSwiftForVC.swift */; };
 		2890227925D2244D008D0E55 /* MXSwiftStringVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2890227825D2244D008D0E55 /* MXSwiftStringVC.swift */; };
+		28926B4E2611D05F00C97ADB /* MXSwiftDeinitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28926B4D2611D05F00C97ADB /* MXSwiftDeinitVC.swift */; };
 		28999B6525DE047300F995B7 /* MXSwiftCharacterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28999B6425DE047300F995B7 /* MXSwiftCharacterVC.swift */; };
 		28999B6E25DE0A5300F995B7 /* MXSwiftArrayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28999B6D25DE0A5300F995B7 /* MXSwiftArrayVC.swift */; };
 		28999B7725DE18DE00F995B7 /* MXSwiftDicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28999B7625DE18DE00F995B7 /* MXSwiftDicVC.swift */; };
@@ -73,6 +74,7 @@
 		2890226025D129F3008D0E55 /* MXSwiftIfVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftIfVC.swift; sourceTree = "<group>"; };
 		2890226C25D1399A008D0E55 /* MXSwiftForVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftForVC.swift; sourceTree = "<group>"; };
 		2890227825D2244D008D0E55 /* MXSwiftStringVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftStringVC.swift; sourceTree = "<group>"; };
+		28926B4D2611D05F00C97ADB /* MXSwiftDeinitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftDeinitVC.swift; sourceTree = "<group>"; };
 		28999B6425DE047300F995B7 /* MXSwiftCharacterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftCharacterVC.swift; sourceTree = "<group>"; };
 		28999B6D25DE0A5300F995B7 /* MXSwiftArrayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftArrayVC.swift; sourceTree = "<group>"; };
 		28999B7625DE18DE00F995B7 /* MXSwiftDicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftDicVC.swift; sourceTree = "<group>"; };
@@ -216,6 +218,14 @@
 				2890227825D2244D008D0E55 /* MXSwiftStringVC.swift */,
 			);
 			path = "Swift 字符串";
+			sourceTree = "<group>";
+		};
+		28926B4C2611D01700C97ADB /* Swift 析构过程 */ = {
+			isa = PBXGroup;
+			children = (
+				28926B4D2611D05F00C97ADB /* MXSwiftDeinitVC.swift */,
+			);
+			path = "Swift 析构过程";
 			sourceTree = "<group>";
 		};
 		28999B6325DE043D00F995B7 /* Swift 字符 */ = {
@@ -373,6 +383,7 @@
 				28103BC7260DAC9E0085B9E8 /* Swift 下标脚本 */,
 				28103BD3260DBBEB0085B9E8 /* Swift 继承 */,
 				28103BDF260DDA4D0085B9E8 /* Swift 构造过程 */,
+				28926B4C2611D01700C97ADB /* Swift 析构过程 */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -592,6 +603,7 @@
 				28B2F56526032B3100228B42 /* Counter.swift in Sources */,
 				28C8698225CBF49F0080AD5E /* TitleListVC.swift in Sources */,
 				28C869A925CCEF220080AD5E /* MXSwiftDataTypeVC.swift in Sources */,
+				28926B4E2611D05F00C97ADB /* MXSwiftDeinitVC.swift in Sources */,
 				2890224F25D0D842008D0E55 /* MXWordsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

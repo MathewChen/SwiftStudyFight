@@ -357,6 +357,9 @@ class MXWordsVC: MXBaseViewController {
         let increment = "increment"
         print(increment)
         
+        //85:Residence
+        let residence = "Residence"
+        print(residence)
     }
     
     

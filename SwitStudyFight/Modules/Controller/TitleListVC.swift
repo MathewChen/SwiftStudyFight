@@ -16,7 +16,7 @@ class TitleListVC: MXBaseViewController,UITableViewDelegate,UITableViewDataSourc
      https://www.runoob.com/swift/swift-tutorial.html
      
      */
-    var titleArr : NSArray = ["Swift 基本语法","Swift 数据类型","Swift 变量","Swift 可选类型","Swift 常量","Swift 字面量","Swift 运算符","Swift 条件语句","Swift 循环","Swift 字符串","Swift 字符","Swift 数组","Swift 字典","Swift 函数","Swift 枚举","Swift 结构体","Swift 类","Swift 属性","Swift 方法","Swift 下标脚本","Swift 继承","Swift 构造过程","Swift 析构过程","Swift 可选链","一起来背单词吧"]
+    var titleArr : NSArray = ["Swift 基本语法","Swift 数据类型","Swift 变量","Swift 可选类型","Swift 常量","Swift 字面量","Swift 运算符","Swift 条件语句","Swift 循环","Swift 字符串","Swift 字符","Swift 数组","Swift 字典","Swift 函数","Swift 枚举","Swift 结构体","Swift 类","Swift 属性","Swift 方法","Swift 下标脚本","Swift 继承","Swift 构造过程","Swift 析构过程","Swift 可选链","Swift 自动引用计数","一起来背单词吧"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -204,6 +204,11 @@ class TitleListVC: MXBaseViewController,UITableViewDelegate,UITableViewDataSourc
             let optionalChainingVC = MXSwiftOptionalChainingVC.init()
             optionalChainingVC.title = titleStr
             navigationController?.pushViewController(optionalChainingVC, animated: true)
+        }else if titleStr == "Swift 自动引用计数" {
+            //FIXME: Swift 自动引用计数
+            let arcVC = MXSwiftARCVC.init()
+            arcVC.title = titleStr
+            navigationController?.pushViewController(arcVC, animated: true)
         }else if titleStr == "一起来背单词吧" {
             //FIXME: Swift 一起来背单词吧
             let wordsVC : MXWordsVC = MXWordsVC.init()

@@ -29,6 +29,7 @@
 		28B2F55D260329BC00228B42 /* MXSwiftMethodVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B2F55C260329BC00228B42 /* MXSwiftMethodVC.swift */; };
 		28B2F56526032B3100228B42 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B2F56426032B3100228B42 /* Counter.swift */; };
 		28BBB475261315FC000F774D /* MXSwiftOptionalChainingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BBB474261315FC000F774D /* MXSwiftOptionalChainingVC.swift */; };
+		28BBB47E26132A8C000F774D /* MXSwiftARCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BBB47D26132A8C000F774D /* MXSwiftARCVC.swift */; };
 		28C8690B25CBEA730080AD5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8690A25CBEA730080AD5E /* AppDelegate.swift */; };
 		28C8690D25CBEA730080AD5E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8690C25CBEA730080AD5E /* SceneDelegate.swift */; };
 		28C8691225CBEA730080AD5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C8691025CBEA730080AD5E /* Main.storyboard */; };
@@ -86,6 +87,7 @@
 		28B2F55C260329BC00228B42 /* MXSwiftMethodVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftMethodVC.swift; sourceTree = "<group>"; };
 		28B2F56426032B3100228B42 /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 		28BBB474261315FC000F774D /* MXSwiftOptionalChainingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftOptionalChainingVC.swift; sourceTree = "<group>"; };
+		28BBB47D26132A8C000F774D /* MXSwiftARCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftARCVC.swift; sourceTree = "<group>"; };
 		28C8690725CBEA730080AD5E /* SwitStudyFight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwitStudyFight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28C8690A25CBEA730080AD5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28C8690C25CBEA730080AD5E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -303,6 +305,14 @@
 			path = "Swift 可选链";
 			sourceTree = "<group>";
 		};
+		28BBB47C26132A67000F774D /* Swift 自动引用计数 */ = {
+			isa = PBXGroup;
+			children = (
+				28BBB47D26132A8C000F774D /* MXSwiftARCVC.swift */,
+			);
+			path = "Swift 自动引用计数";
+			sourceTree = "<group>";
+		};
 		28C868FE25CBEA730080AD5E = {
 			isa = PBXGroup;
 			children = (
@@ -395,6 +405,7 @@
 				28103BDF260DDA4D0085B9E8 /* Swift 构造过程 */,
 				28926B4C2611D01700C97ADB /* Swift 析构过程 */,
 				28BBB473261315C8000F774D /* Swift 可选链 */,
+				28BBB47C26132A67000F774D /* Swift 自动引用计数 */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -600,6 +611,7 @@
 				28BBB475261315FC000F774D /* MXSwiftOptionalChainingVC.swift in Sources */,
 				28B2F55D260329BC00228B42 /* MXSwiftMethodVC.swift in Sources */,
 				28103BD5260DBC660085B9E8 /* MXSwiftSuperVC.swift in Sources */,
+				28BBB47E26132A8C000F774D /* MXSwiftARCVC.swift in Sources */,
 				28999B8825DE6C6B00F995B7 /* MXSwiftFuncVC.swift in Sources */,
 				28999B9125DFBD7A00F995B7 /* MXSwiftClosuresVC.swift in Sources */,
 				2890221F25CE416B008D0E55 /* MXSwiftLetVC.swift in Sources */,

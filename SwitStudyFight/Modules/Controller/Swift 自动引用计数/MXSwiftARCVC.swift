@@ -20,6 +20,11 @@ class MXSwiftARCVC: MXBaseViewController {
         super.viewDidLoad()
 
         funcA()
+        funcB()
+        funcC()
+        funcD()
+        funcE()
+        funcF()
     }
     
     //FIXME: ARC 实例
@@ -55,6 +60,52 @@ class MXSwiftARCVC: MXBaseViewController {
         runoob = Persion2(name: "Runoob")
         number73 = Apartment2(number: 73)
         
+        // 意感叹号是用来展开和访问可选变量 runoob 和 number73 中的实例
+        // 循环强引用被创建
+        runoob!.aparment = number73
+        number73!.tenant = runoob
+        
+        //断开 runoob 和 number73 变量所持有的强引用是，引用计数器并不会降为0，实例也不会被 ARC 销毁
+        //注意，当你把这两个变量设备nil时，没有一个析构函数被调用。
+        //强引用循环阻止了Person2和Apartment2类实例的销毁，并在你的应用程序中造成了内存泄漏
+        runoob = nil
+        number73 = nil
+    }
+    
+    //FIXME: 弱引用实例
+    func funcC() {
+        var toc: Module?
+        var list: SubModule?
+        toc = Module(name: "ARC")
+        list = SubModule(number: 4)
+        toc!.sub = list
+        list!.topic = toc
+        
+        toc = nil
+        list = nil
+    }
+    
+    //FIXME: 无主引用实例
+    func funcD() {
+        var module: Student?
+        module = Student(name: "ARC")
+        module!.section = Marks(marks: 98, stname: module!)
+        module = nil
+    }
+    
+    //FIXME: 闭包引起的循环强引用
+    func funcE() {
+        // 创建实例并打印信息
+        let paragraph: HTMLElement? = HTMLElement(name: "P", text: "HELLO WORLD")
+        
+        print(paragraph!.asHTML())
+    }
+    
+    //FIXME: 闭包弱引用
+    func funcF() {
+        // 创建实例并打印信息
+        let paragraph: HTMLElement2? = HTMLElement2(name: "F", text: "HELLO WORLD")
+        print(paragraph!.asHTML())
     }
 
     class Persion {
@@ -85,12 +136,108 @@ class MXSwiftARCVC: MXBaseViewController {
         init(number: Int) {
             self.number = number
         }
-        var tenant: Persion?
+        var tenant: Persion2?
         deinit {
             print("Apartment #\(number) 被析构")
         }
     }
     
+    class Module {
+        let name: String
+        init(name: String) {
+            self.name = name
+        }
+        
+        var sub: SubModule?
+        
+        deinit {
+            print("\(name) 主模块")
+        }
+    }
+    
+    class SubModule {
+        let number: Int
+        
+        init(number: Int) {
+            self.number = number
+        }
+        
+        weak var topic: Module?
+        deinit {
+            print("子模块 topic 数为 \(number)")
+        }
+    }
+    
+    class Student {
+        let name: String
+        init(name: String) {
+            self.name = name
+        }
+        
+        var section: Marks?
+        
+        deinit {
+            print("\(name)")
+        }
+    }
+    
+    class Marks {
+        let marks: Int
+        unowned let stname: Student
+        init(marks: Int, stname: Student) {
+            self.marks = marks
+            self.stname = stname
+        }
+        
+        deinit {
+            print("学生的份数为 \(marks)")
+        }
+    }
+    
+    class HTMLElement {
+        let name: String
+        let text: String?
+        
+        lazy var asHTML: () -> String = {
+            if let text = self.text {
+                return "<\(self.name)>\(text)</\(self.name)>"
+            }else {
+                return "<\(self.name) />"
+            }
+        }
+        
+        init(name: String, text: String? = nil) {
+            self.name = name
+            self.text = text
+        }
+        
+        deinit {
+            print("\(name) is being deinitialized")
+        }
+    }
+    
+    class HTMLElement2 {
+        let name: String
+        let text: String?
+        
+        lazy var asHTML: () -> String = {
+            [unowned self] in
+            if let text = self.text {
+                return "<\(self.name)>\(text)</\(self.name)>"
+            }else {
+                return "<\(self.name) />"
+            }
+        }
+        
+        init(name: String, text: String? = nil) {
+            self.name = name
+            self.text = text
+        }
+        
+        deinit {
+            print("\(name) 被析构")
+        }
+    }
     /*
      reference
      n.
@@ -103,5 +250,9 @@ class MXSwiftARCVC: MXBaseViewController {
      房客;租户;佃户
      v.
      (作为租赁者)居住，工作
+     
+     Element
+     n.
+     要素;基本部分;典型部分;少量;有点;有些;(大团体或社会中的)一组，一群，一伙
      */
 }

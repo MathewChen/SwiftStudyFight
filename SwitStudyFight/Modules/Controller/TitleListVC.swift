@@ -234,9 +234,6 @@ class TitleListVC: MXBaseViewController,UITableViewDelegate,UITableViewDataSourc
             
             
         }
-        
-        
-        
     }
     
     /// 计算一个月

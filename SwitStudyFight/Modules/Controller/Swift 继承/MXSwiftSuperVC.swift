@@ -135,3 +135,56 @@ class MXSwiftSuperVC: MXBaseViewController {
     
     //由于以上实例使用了 final 关键字不允许重写，所以执行会报错：
 }
+
+//class Solution : NSObject {
+//    func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
+//        var sumArray : [Int]
+//        for i in nums.enumerated() {
+//            for j in nums.enumerated() {
+//                if nums[i] + nums[j] == target {
+//                    return [i,j]
+//                }
+//            }
+//        }
+//
+//
+//        return sumArray
+//    }
+//}
+
+//func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
+//    var dic: [Int: Int] = [:]
+//    for (index, num) in nums.enumerated() {
+//        let remainder = target - num
+//        if (dic.keys.contains(remainder)) {
+//            if let remainderIndex = dic[remainder], remainderIndex != index {
+//                return [remainderIndex, index]
+//            }
+//        }
+//        dic[num] = index
+//    }
+//    return []
+//}
+
+//class Solution {
+//
+//
+//    func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
+//
+//        var table: [Int:Int] = [:]
+//
+//        for (index, num) in nums.enumerated() {
+//
+//            let expect = target - num
+//
+//            if let i = table[expect], i != index {
+//                return [i, index]
+//            }
+//
+//            table[num] = index
+//        }
+//
+//        return []
+//    }
+//}
+

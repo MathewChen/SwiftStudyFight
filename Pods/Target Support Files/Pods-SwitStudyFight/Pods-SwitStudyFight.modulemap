@@ -1,0 +1,6 @@
+module Pods_SwitStudyFight {
+  umbrella header "Pods-SwitStudyFight-umbrella.h"
+
+  export *
+  module * { export * }
+}

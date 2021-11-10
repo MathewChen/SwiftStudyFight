@@ -45,6 +45,7 @@
 		28C869BB25CD24580080AD5E /* MXBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C869BA25CD24580080AD5E /* MXBaseViewController.swift */; };
 		28C869C725CD29610080AD5E /* MXSwiftOptionalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C869C625CD29610080AD5E /* MXSwiftOptionalsVC.swift */; };
 		28F4BA1D25F9B15A007A39A4 /* MXSwiftClassVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F4BA1C25F9B15A007A39A4 /* MXSwiftClassVC.swift */; };
+		F352391B72E2BC1C6580A7AB /* libPods-SwitStudyFight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56770AE57AC79ADFB1E5A084 /* libPods-SwitStudyFight.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,9 @@
 		28C869BA25CD24580080AD5E /* MXBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXBaseViewController.swift; sourceTree = "<group>"; };
 		28C869C625CD29610080AD5E /* MXSwiftOptionalsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftOptionalsVC.swift; sourceTree = "<group>"; };
 		28F4BA1C25F9B15A007A39A4 /* MXSwiftClassVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXSwiftClassVC.swift; sourceTree = "<group>"; };
+		56770AE57AC79ADFB1E5A084 /* libPods-SwitStudyFight.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwitStudyFight.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AAE2537ACFF93C87087D29 /* Pods-SwitStudyFight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwitStudyFight.release.xcconfig"; path = "Target Support Files/Pods-SwitStudyFight/Pods-SwitStudyFight.release.xcconfig"; sourceTree = "<group>"; };
+		9F5C66C5ABAF3F70A86CE194 /* Pods-SwitStudyFight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwitStudyFight.debug.xcconfig"; path = "Target Support Files/Pods-SwitStudyFight/Pods-SwitStudyFight.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F352391B72E2BC1C6580A7AB /* libPods-SwitStudyFight.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +325,8 @@
 				28C8692025CBEA750080AD5E /* SwitStudyFightTests */,
 				28C8692B25CBEA750080AD5E /* SwitStudyFightUITests */,
 				28C8690825CBEA730080AD5E /* Products */,
+				4DF40C6D52863FF451370EFC /* Pods */,
+				541612394BACE81A5D776061 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -466,6 +473,24 @@
 			path = "Swift 类";
 			sourceTree = "<group>";
 		};
+		4DF40C6D52863FF451370EFC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F5C66C5ABAF3F70A86CE194 /* Pods-SwitStudyFight.debug.xcconfig */,
+				81AAE2537ACFF93C87087D29 /* Pods-SwitStudyFight.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		541612394BACE81A5D776061 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56770AE57AC79ADFB1E5A084 /* libPods-SwitStudyFight.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -473,6 +498,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28C8693125CBEA750080AD5E /* Build configuration list for PBXNativeTarget "SwitStudyFight" */;
 			buildPhases = (
+				B202DE48C8B633225F02C7DA /* [CP] Check Pods Manifest.lock */,
 				28C8690325CBEA730080AD5E /* Sources */,
 				28C8690425CBEA730080AD5E /* Frameworks */,
 				28C8690525CBEA730080AD5E /* Resources */,
@@ -590,6 +616,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B202DE48C8B633225F02C7DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwitStudyFight-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		28C8690325CBEA730080AD5E /* Sources */ = {
@@ -801,6 +852,7 @@
 		};
 		28C8693225CBEA750080AD5E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F5C66C5ABAF3F70A86CE194 /* Pods-SwitStudyFight.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -820,6 +872,7 @@
 		};
 		28C8693325CBEA750080AD5E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81AAE2537ACFF93C87087D29 /* Pods-SwitStudyFight.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
